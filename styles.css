@@ -1,5 +1,6 @@
 :root {
   --bg: #f7f5f0;
+  --bg: #efeeec;
   --surface: #f7f5ef;
   --surface-alt: #ece7da;
   --accent: #efbe00;
@@ -34,6 +35,36 @@ body {
   border-bottom: 1px solid #ddd9ce;
 }
 
+.poster-style {
+  position: relative;
+  overflow: hidden;
+}
+
+.decor {
+  position: absolute;
+  background: #f1e8c1;
+  border-radius: 999px;
+  z-index: 0;
+}
+
+.decor-top-right {
+  width: 220px;
+  height: 220px;
+  right: -80px;
+  top: -60px;
+}
+
+.decor-bottom-left {
+  width: 220px;
+  height: 220px;
+  left: -80px;
+  bottom: -80px;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
 
 .hero {
   padding-bottom: 2rem;
@@ -44,6 +75,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0;
+  padding: 0.55rem 0;
 }
 
 .brand {
@@ -72,6 +104,7 @@ body {
 .hero-content {
   max-width: 760px;
   padding: 0 0 2rem;
+  padding: 0.2rem 0 2.2rem;
 }
 
 .hero-center {
@@ -95,6 +128,7 @@ body {
   font-size: clamp(2.6rem, 8vw, 5.2rem);
   line-height: 0.95;
   margin: 0.4rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.02em;
   font-weight: 900;
 }
@@ -321,5 +355,6 @@ h1 {
     margin-left: 0;
     text-align: center;
     max-width: 100%;
+    gap: 0.6rem;
   }
 }
