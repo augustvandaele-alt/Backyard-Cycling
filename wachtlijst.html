@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wachtlijst | Backyard Cycling</title>
+    <meta
+      name="description"
+      content="Schrijf je in op de wachtlijst van Backyard Cycling en bekijk hoeveel deelnemers al geregistreerd zijn."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="subpage-header">
+      <nav class="nav container">
+        <a href="index.html" class="brand">Backyard Cycling</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="wachtlijst.html" aria-current="page">Wachtlijst</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="section container">
+      <h1>Zet je op de wachtlijst</h1>
+      <p>Vul je basisgegevens in om je plek op de wachtlijst te reserveren.</p>
+      <p class="capacity-box">
+        Maximum <strong>100 deelnemers</strong> · Momenteel ingeschreven:
+        <strong><span data-participant-count>0</span>/100</strong>
+      </p>
+
+      <form id="waitlist-form" class="form-card">
+        <label for="voornaam">Voornaam</label>
+        <input id="voornaam" name="voornaam" type="text" required />
+
+        <label for="achternaam">Achternaam</label>
+        <input id="achternaam" name="achternaam" type="text" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="telefoon">Telefoon</label>
+        <input id="telefoon" name="telefoon" type="tel" required />
+
+        <button type="submit" class="btn btn-primary">Inschrijven</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Backyard Cycling</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
