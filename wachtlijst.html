@@ -6,6 +6,7 @@
     <title>Wachtlijst | Backyard Cycling</title>
     <meta
       name="description"
+      content="Schrijf je in op de wachtlijst van Backyard Cycling en bekijk hoeveel deelnemers al geregistreerd zijn."
       content="Schrijf je in op de wachtlijst van Backyard Cycling en bekijk wie al geregistreerd is."
     />
     <link rel="stylesheet" href="styles.css" />
@@ -42,6 +43,10 @@
         <button type="submit" class="btn btn-primary">Inschrijven</button>
       </form>
 
+      <aside class="counter-inline" aria-live="polite">
+        <p class="counter-label">Max 100 deelnemers</p>
+        <p class="counter-number"><span data-participant-count>0</span>/100</p>
+      </aside>
       <section class="section-small">
         <h2>Ingeschreven op de wachtlijst</h2>
         <p class="muted">Overzicht met naam en voornaam van alle inschrijvingen.</p>
@@ -54,6 +59,7 @@
         <p>© <span id="year"></span> Backyard Cycling</p>
       </div>
     </footer>
+
 
     <script src="script.js"></script>
   </body>

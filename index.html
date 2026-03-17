@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="hero">
     <header class="hero poster-style">
       <div class="decor decor-top-right" aria-hidden="true"></div>
       <div class="decor decor-bottom-left" aria-hidden="true"></div>
@@ -38,6 +39,10 @@
         <p>
           Beleef een unieke fietsuitdaging met een warme community en steun samen met
           ons de strijd: <strong>Kom op tegen Kanker</strong>.
+        </p>
+        <p class="urgency-note">
+          <strong>Let op:</strong> er is een limiet van <strong>100 deelnemers</strong>.
+          Wees er snel bij om je plek te verzekeren.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="wachtlijst.html">Zet je op de wachtlijst</a>
@@ -78,6 +83,11 @@
         <p>© <span id="year"></span> Backyard Cycling</p>
       </div>
     </footer>
+
+    <aside class="counter-fixed" aria-live="polite">
+      <p class="counter-label">Max 100 deelnemers</p>
+      <p class="counter-number"><span data-participant-count>0</span>/100</p>
+    </aside>
 
     <script src="script.js"></script>
   </body>

@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'backyard-wachtlijst';
+const MAX_PARTICIPANTS = 100;
 
 const yearEl = document.getElementById('year');
 if (yearEl) {
@@ -23,6 +24,11 @@ function saveWaitlist(entries) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(entries));
 }
 
+function updateParticipantCounters() {
+  const entries = readWaitlist();
+  const count = Math.min(entries.length, MAX_PARTICIPANTS);
+  document.querySelectorAll('[data-participant-count]').forEach((el) => {
+    el.textContent = String(count);
 function renderWaitlist() {
   const listEl = document.getElementById('waitlist-overview');
   if (!listEl) {
@@ -51,6 +57,13 @@ if (form) {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    const entries = readWaitlist();
+    if (entries.length >= MAX_PARTICIPANTS) {
+      alert('De wachtlijst heeft het maximum van 100 deelnemers bereikt.');
+      updateParticipantCounters();
+      return;
+    }
+
     const formData = new FormData(form);
     const newEntry = {
       voornaam: String(formData.get('voornaam') || '').trim(),
@@ -63,6 +76,14 @@ if (form) {
       return;
     }
 
+    entries.push(newEntry);
+    saveWaitlist(entries);
+    form.reset();
+    updateParticipantCounters();
+  });
+}
+
+updateParticipantCounters();
     const entries = readWaitlist();
     entries.push(newEntry);
     saveWaitlist(entries);
