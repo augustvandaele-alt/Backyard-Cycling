@@ -29,26 +29,6 @@ function updateParticipantCounters() {
   const count = Math.min(entries.length, MAX_PARTICIPANTS);
   document.querySelectorAll('[data-participant-count]').forEach((el) => {
     el.textContent = String(count);
-function renderWaitlist() {
-  const listEl = document.getElementById('waitlist-overview');
-  if (!listEl) {
-    return;
-  }
-
-  const entries = readWaitlist();
-  listEl.innerHTML = '';
-
-  if (entries.length === 0) {
-    const empty = document.createElement('li');
-    empty.textContent = 'Nog geen inschrijvingen op de wachtlijst.';
-    listEl.appendChild(empty);
-    return;
-  }
-
-  entries.forEach((entry) => {
-    const li = document.createElement('li');
-    li.textContent = `${entry.voornaam} ${entry.achternaam}`;
-    listEl.appendChild(li);
   });
 }
 
@@ -84,12 +64,3 @@ if (form) {
 }
 
 updateParticipantCounters();
-    const entries = readWaitlist();
-    entries.push(newEntry);
-    saveWaitlist(entries);
-    form.reset();
-    renderWaitlist();
-  });
-}
-
-renderWaitlist();
