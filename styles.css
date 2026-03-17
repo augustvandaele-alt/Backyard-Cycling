@@ -73,7 +73,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+  padding: 0.55rem 0;
 }
 
 .brand {
@@ -101,7 +101,7 @@ body {
 
 .hero-content {
   max-width: 760px;
-  padding: 0 0 2rem;
+  padding: 0.2rem 0 2.2rem;
 }
 
 .hero-center {
@@ -118,13 +118,12 @@ body {
   font-weight: 700;
   border-radius: 999px;
   padding: 0.4rem 1.2rem;
-  margin-top: 0;
 }
 
 .poster-title {
   font-size: clamp(2.6rem, 8vw, 5.2rem);
   line-height: 0.95;
-  margin: 0.4rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.02em;
   font-weight: 900;
 }
@@ -280,6 +279,6 @@ h1 {
   .nav {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.4rem;
+    gap: 0.6rem;
   }
 }
