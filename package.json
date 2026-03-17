@@ -1,0 +1,10 @@
+{
+  "name": "backyard-cycling",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backyard Cycling website with shared waitlist backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

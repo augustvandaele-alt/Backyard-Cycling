@@ -1,0 +1,21 @@
+<svg width="420" height="250" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustratie van een gele racefiets zonder fietser">
+  <circle cx="115" cy="192" r="47" stroke="#3D2A15" stroke-width="6" fill="#F6F1E3"/>
+  <circle cx="307" cy="192" r="47" stroke="#3D2A15" stroke-width="6" fill="#F6F1E3"/>
+  <circle cx="115" cy="192" r="41" stroke="#E8A700" stroke-width="3"/>
+  <circle cx="307" cy="192" r="41" stroke="#E8A700" stroke-width="3"/>
+
+  <path d="M116 192L177 122L251 124L307 192" stroke="#E6AC00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M176 122L197 192" stroke="#E6AC00" stroke-width="8" stroke-linecap="round"/>
+  <path d="M152 160L220 160" stroke="#E6AC00" stroke-width="8" stroke-linecap="round"/>
+  <path d="M250 124L266 101" stroke="#3D2A15" stroke-width="8" stroke-linecap="round"/>
+  <path d="M164 122L134 122" stroke="#3D2A15" stroke-width="8" stroke-linecap="round"/>
+
+  <path d="M177 122L171 111" stroke="#3D2A15" stroke-width="7" stroke-linecap="round"/>
+  <rect x="160" y="106" width="26" height="8" rx="4" fill="#3D2A15"/>
+
+  <circle cx="116" cy="192" r="6" fill="#2A1D10"/>
+  <circle cx="197" cy="192" r="7" fill="#2A1D10"/>
+  <path d="M197 192L171 184" stroke="#2A1D10" stroke-width="4" stroke-linecap="round"/>
+  <path d="M197 192L207 214" stroke="#2A1D10" stroke-width="4" stroke-linecap="round"/>
+  <path d="M197 192L215 178" stroke="#2A1D10" stroke-width="4" stroke-linecap="round"/>
+</svg>
