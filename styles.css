@@ -69,7 +69,6 @@ body {
   color: #9f7900;
 }
 
-.nav-links a {
 .hero .nav-links a {
   display: inline-block;
   background: #f1e3ad;
@@ -82,8 +81,6 @@ body {
   padding: 0.35rem 0.9rem;
 }
 
-.nav-links a:hover,
-.nav-links a:focus-visible {
 .hero .nav-links a:hover,
 .hero .nav-links a:focus-visible {
   background: #ead893;
