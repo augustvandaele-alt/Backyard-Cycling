@@ -1,11 +1,11 @@
 :root {
-  --bg: #0f172a;
-  --surface: #111827;
-  --surface-alt: #0b1220;
-  --accent: #22c55e;
-  --accent-dark: #16a34a;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
+  --bg: #efeeec;
+  --surface: #f7f5ef;
+  --surface-alt: #ece7da;
+  --accent: #efbe00;
+  --accent-dark: #cb9d00;
+  --text: #1f283b;
+  --muted: #667089;
   --white: #ffffff;
   --max-width: 1050px;
   --radius: 12px;
@@ -30,24 +30,56 @@ body {
 
 .hero,
 .subpage-header {
-  background: linear-gradient(180deg, #111827 0%, #0f172a 100%);
+  background: var(--bg);
+  border-bottom: 1px solid #ddd9ce;
+}
+
+.poster-style {
+  position: relative;
+  overflow: hidden;
+}
+
+.decor {
+  position: absolute;
+  background: #f1e8c1;
+  border-radius: 999px;
+  z-index: 0;
+}
+
+.decor-top-right {
+  width: 220px;
+  height: 220px;
+  right: -80px;
+  top: -60px;
+}
+
+.decor-bottom-left {
+  width: 220px;
+  height: 220px;
+  left: -80px;
+  bottom: -80px;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 0.55rem 0;
 }
 
 .brand {
-  color: var(--white);
+  color: var(--text);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .nav-links {
@@ -64,27 +96,64 @@ body {
 }
 
 .nav-links a[aria-current='page'] {
-  color: var(--accent);
+  color: #9f7900;
 }
 
 .hero-content {
-  max-width: 680px;
-  padding: 3rem 0;
+  max-width: 760px;
+  padding: 0.2rem 0 2.2rem;
+}
+
+.hero-center {
+  text-align: center;
 }
 
 .eyebrow {
-  color: var(--accent);
+  display: inline-block;
+  background: #f1e3ad;
+  color: #1f283b;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  font-size: 0.78rem;
   font-weight: 700;
+  border-radius: 999px;
+  padding: 0.4rem 1.2rem;
+}
+
+.poster-title {
+  font-size: clamp(2.6rem, 8vw, 5.2rem);
+  line-height: 0.95;
+  margin: 1rem 0;
+  letter-spacing: 0.02em;
+  font-weight: 900;
+}
+
+.poster-title span {
+  color: var(--accent);
+  display: block;
+}
+
+.cyclist-image {
+  width: min(420px, 100%);
+  margin: 1.4rem auto;
+  display: block;
 }
 
 .event-date-highlight {
-  background: #0b1220;
-  border: 1px solid #1f2937;
+  background: #f6f1da;
+  border: 1px solid #e4d8ad;
   border-radius: var(--radius);
   padding: 0.8rem 1rem;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.tagline {
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
 }
 
 h1,
@@ -118,7 +187,7 @@ h1 {
 .form-card,
 .waitlist li {
   background: var(--surface);
-  border: 1px solid #1f2937;
+  border: 1px solid #ddd4bd;
   border-radius: var(--radius);
 }
 
@@ -135,7 +204,7 @@ h1 {
 
 .form-card input {
   background: var(--surface-alt);
-  border: 1px solid #334155;
+  border: 1px solid #d8cda8;
   color: var(--text);
   border-radius: 8px;
   padding: 0.65rem 0.7rem;
@@ -146,6 +215,7 @@ h1 {
   gap: 0.75rem;
   flex-wrap: wrap;
   margin-top: 1.3rem;
+  justify-content: center;
 }
 
 .btn {
@@ -155,14 +225,14 @@ h1 {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0.7rem 1.1rem;
   cursor: pointer;
 }
 
 .btn-primary {
   background: var(--accent);
-  color: #04120a;
+  color: #352900;
 }
 
 .btn-primary:hover {
@@ -172,7 +242,7 @@ h1 {
 .btn-secondary {
   background: transparent;
   color: var(--text);
-  border: 1px solid #334155;
+  border: 1px solid #d9cda5;
 }
 
 .waitlist {
@@ -196,8 +266,8 @@ h1 {
 }
 
 .footer {
-  border-top: 1px solid #1f2937;
-  padding: 1rem 0;
+  border-top: 1px solid #ddd4bd;
+  padding: 0.55rem 0;
 }
 
 .footer-inner {
