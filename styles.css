@@ -1,5 +1,5 @@
 :root {
-  --bg: #f5f3ee;
+  --bg: #efeeec;
   --surface: #f7f5ef;
   --surface-alt: #ece7da;
   --accent: #efbe00;
@@ -36,6 +36,28 @@ body {
 
 .poster-style {
   position: relative;
+  overflow: hidden;
+}
+
+.decor {
+  position: absolute;
+  background: #f1e8c1;
+  border-radius: 999px;
+  z-index: 0;
+}
+
+.decor-top-right {
+  width: 220px;
+  height: 220px;
+  right: -80px;
+  top: -60px;
+}
+
+.decor-bottom-left {
+  width: 220px;
+  height: 220px;
+  left: -80px;
+  bottom: -80px;
 }
 
 .hero > * {
@@ -51,7 +73,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+  padding: 0.55rem 0;
 }
 
 .brand {
@@ -79,7 +101,7 @@ body {
 
 .hero-content {
   max-width: 760px;
-  padding: 0 0 2rem;
+  padding: 0.2rem 0 2.2rem;
 }
 
 .hero-center {
@@ -96,13 +118,12 @@ body {
   font-weight: 700;
   border-radius: 999px;
   padding: 0.4rem 1.2rem;
-  margin-top: 0;
 }
 
 .poster-title {
   font-size: clamp(2.6rem, 8vw, 5.2rem);
   line-height: 0.95;
-  margin: 0.4rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.02em;
   font-weight: 900;
 }
@@ -258,76 +279,6 @@ h1 {
   .nav {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.4rem;
-  }
-}
-
-
-.counter-fixed {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  background: #f6f1da;
-  border: 2px solid #e4d8ad;
-  border-radius: var(--radius);
-  padding: 0.8rem 1rem;
-  text-align: right;
-  box-shadow: 0 8px 24px rgba(31, 40, 59, 0.16);
-  z-index: 20;
-}
-
-.counter-label {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 700;
-}
-
-.counter-number {
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  font-weight: 900;
-  line-height: 1;
-  color: #1f283b;
-}
-
-@media (max-width: 700px) {
-  .counter-fixed {
-    left: 1rem;
-    right: 1rem;
-    text-align: center;
-  }
-}
-
-
-.urgency-note {
-  background: #fff2c2;
-  border: 1px solid #e6cc73;
-  border-radius: var(--radius);
-  padding: 0.7rem 1rem;
-  max-width: 680px;
-  margin: 0.4rem auto 0;
-}
-
-
-.counter-inline {
-  background: #f6f1da;
-  border: 2px solid #e4d8ad;
-  border-radius: var(--radius);
-  padding: 0.8rem 1rem;
-  text-align: right;
-  box-shadow: 0 8px 24px rgba(31, 40, 59, 0.12);
-  margin-top: 1rem;
-  max-width: 320px;
-  margin-left: auto;
-}
-
-@media (max-width: 700px) {
-  .counter-inline {
-    margin-left: 0;
-    text-align: center;
-    max-width: 100%;
+    gap: 0.6rem;
   }
 }
