@@ -1,3 +1,5 @@
+const MAX_PARTICIPANTS = 100;
+const COUNTER_REFRESH_MS = 10000;
 const STORAGE_KEY = 'backyard-wachtlijst';
 const MAX_PARTICIPANTS = 100;
 
@@ -7,6 +9,7 @@ if (yearEl) {
 }
 
 async function fetchCount() {
+  const response = await fetch('/api/count', { cache: 'no-store' });
   const response = await fetch('/api/count');
   if (!response.ok) {
     throw new Error('Kon teller niet ophalen.');
@@ -118,3 +121,4 @@ if (form) {
 }
 
 updateParticipantCounters();
+window.setInterval(updateParticipantCounters, COUNTER_REFRESH_MS);
