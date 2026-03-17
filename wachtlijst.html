@@ -6,7 +6,7 @@
     <title>Wachtlijst | Backyard Cycling</title>
     <meta
       name="description"
-      content="Schrijf je in op de wachtlijst van Backyard Cycling en bekijk hoeveel deelnemers al geregistreerd zijn."
+      content="Schrijf je in op de wachtlijst van Backyard Cycling en bekijk wie al geregistreerd is."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -25,10 +25,6 @@
     <main class="section container">
       <h1>Zet je op de wachtlijst</h1>
       <p>Vul je basisgegevens in om je plek op de wachtlijst te reserveren.</p>
-      <p class="capacity-box">
-        Maximum <strong>100 deelnemers</strong> · Momenteel ingeschreven:
-        <strong><span data-participant-count>0</span>/100</strong>
-      </p>
 
       <form id="waitlist-form" class="form-card">
         <label for="voornaam">Voornaam</label>
@@ -45,6 +41,12 @@
 
         <button type="submit" class="btn btn-primary">Inschrijven</button>
       </form>
+
+      <section class="section-small">
+        <h2>Ingeschreven op de wachtlijst</h2>
+        <p class="muted">Overzicht met naam en voornaam van alle inschrijvingen.</p>
+        <ul id="waitlist-overview" class="waitlist"></ul>
+      </section>
     </main>
 
     <footer class="footer">
