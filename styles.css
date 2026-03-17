@@ -73,7 +73,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+  padding: 0.55rem 0;
 }
 
 .brand {
@@ -101,7 +101,7 @@ body {
 
 .hero-content {
   max-width: 760px;
-  padding: 0 0 2rem;
+  padding: 0.2rem 0 2.2rem;
 }
 
 .hero-center {
@@ -118,13 +118,12 @@ body {
   font-weight: 700;
   border-radius: 999px;
   padding: 0.4rem 1.2rem;
-  margin-top: 0;
 }
 
 .poster-title {
   font-size: clamp(2.6rem, 8vw, 5.2rem);
   line-height: 0.95;
-  margin: 0.4rem 0;
+  margin: 1rem 0;
   letter-spacing: 0.02em;
   font-weight: 900;
 }
@@ -280,45 +279,6 @@ h1 {
   .nav {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.4rem;
-  }
-}
-
-
-.counter-fixed {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  background: #f6f1da;
-  border: 2px solid #e4d8ad;
-  border-radius: var(--radius);
-  padding: 0.8rem 1rem;
-  text-align: right;
-  box-shadow: 0 8px 24px rgba(31, 40, 59, 0.16);
-  z-index: 20;
-}
-
-.counter-label {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 700;
-}
-
-.counter-number {
-  margin: 0;
-  font-size: clamp(2rem, 4vw, 2.8rem);
-  font-weight: 900;
-  line-height: 1;
-  color: #1f283b;
-}
-
-@media (max-width: 700px) {
-  .counter-fixed {
-    left: 1rem;
-    right: 1rem;
-    text-align: center;
+    gap: 0.6rem;
   }
 }
